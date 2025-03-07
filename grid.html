@@ -7,5 +7,22 @@ const canvas = document.getElementById("backboard");
 const ctx = canvas.getContext("2d");
 
 const radius = 50;
-  
+
+ function draw_single_Hex(x, y)
+   {
+    ctx.beginPath();
+    ctx.strokeStyle="white";
+    for (let i = 0; i < 6; i++)
+      {
+        ctx.lineTo(x + radius*Math.sin((2*PI/6)*i), 
+				           y + radius*Math.cos((2*PI/6)*i));
+      }
+    ctx.closePath();
+    ctx.stroke();
+   }
+function init() 
+{
+draw_single_Hex(50, 50);
+}
+init();
 </script>
