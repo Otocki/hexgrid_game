@@ -19,8 +19,7 @@ function draw_single_Hex(x, y)
     ctx.strokeStyle="white";
     for (let i = 0; i < 6; i++)
       {
-        ctx.lineTo(x + radius*Math.sin((2*PI/6)*i), 
-				           y + radius*Math.cos((2*PI/6)*i));
+        ctx.lineTo(x + radius*Math.sin(((2*PI)/6)*i), y + radius*Math.cos(((2*PI)/6)*i));
       }
     ctx.closePath();
     ctx.stroke();
