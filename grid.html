@@ -8,7 +8,12 @@ const ctx = canvas.getContext("2d");
 
 const radius = 50;
 
- function draw_single_Hex(x, y)
+function init() 
+{
+draw_single_Hex(50, 50);
+}
+init();
+function draw_single_Hex(x, y)
    {
     ctx.beginPath();
     ctx.strokeStyle="white";
@@ -20,9 +25,4 @@ const radius = 50;
     ctx.closePath();
     ctx.stroke();
    }
-function init() 
-{
-draw_single_Hex(50, 50);
-}
-init();
 </script>
